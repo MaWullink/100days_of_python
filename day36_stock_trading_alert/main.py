@@ -36,9 +36,7 @@ if percentage_difference >= 5:
 
     news_params = {
         "apiKey": NEWS_API_KEY,
-        "q": COMPANY_NAME,
-        "searchIn": "title,description",
-        "sortBy": "publishedAt",
+        "qInTitle": COMPANY_NAME,
     }
 
     res = requests.get(NEWS_ENDPOINT, params=news_params)
