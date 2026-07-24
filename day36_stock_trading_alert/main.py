@@ -21,7 +21,7 @@ params = {
 
 res = requests.get(STOCK_ENDPOINT, params=params)
 data = res.json()
-print(data)
+
 daily_data = data["Time Series (Daily)"]
 dates = list(daily_data.keys())
 

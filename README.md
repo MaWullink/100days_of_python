@@ -1,21 +1,14 @@
 # 100 Days of Python 🐍
 
-This repository contains my projects and exercises from Angela Yu's **100 Days of Code: The Complete Python Pro Bootcamp**.
+A collection of projects and exercises created while following Angela Yu's **100 Days of Code: The Complete Python Pro Bootcamp**.
 
-## Progress
-
-- Currently working through the course
-
-## Topics
-
-- Python
+## What You'll Find
+- Python Fundamentals
 - Object-Oriented Programming
 - Automation
-- Data Handling (Pandas)
 - APIs
+- Data Analysis with Pandas
 - Web Development
 - Databases
 
-## Projects
-
-Each folder contains the project from that day of the course.
+Each folder represents one day of the course and contains the corresponding project.
