@@ -25,3 +25,6 @@ build/
 .DS_Store
 __MACOSX/
 ._*
+
+# Authentication files
+browser.json
