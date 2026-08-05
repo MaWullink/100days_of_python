@@ -28,3 +28,4 @@ __MACOSX/
 
 # Authentication files
 browser.json
+chrome_profile/
