@@ -12,6 +12,7 @@ env/
 # Python cache files
 __pycache__/
 *.py[cod]
+*.pyc
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
