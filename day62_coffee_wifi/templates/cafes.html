@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/table.html' import render_table %}
+{% block title %}Restaurants{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>All Cafes</h1>
+
+
+       {% if cafes %}
+    {{ render_table(
+    cafes,
+    titles=[
+        ("Cafe Name", "Cafe Name"),
+        ("Location", "Location"),
+        ("Open", "Open"),
+        ("Close", "Close"),
+        ("Coffee", "Coffee"),
+        ("Wifi", "Wifi"),
+        ("Power", "Power")
+    ],
+    urlize_columns=("Location",)
+) }}
+{% else %}
+    <p>No cafes have been added yet.</p>
+{% endif %}
+
+
+      <p><a href="{{ url_for('home') }}">Return to index page</a></p>
+        <a class="btn btn-warning btn-lg" href="{{ url_for('add_cafe') }}" role="button">Add</a>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

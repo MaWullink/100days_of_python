@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+
+    <ul>
+      <li>{{ book.title }} - {{ book.author }} - {{ book.rating }}</li>
+    </ul>
+
+    <form action="{{ url_for('edit', id=book.id) }}" method="POST">
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating" type="text">
+
+      <button type="submit">Edit rating</button>
+    </form>
+
+    <a href="{{ url_for('home') }}">Go back to home page</a>
+  </body>
+</html>
