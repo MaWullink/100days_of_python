@@ -36,3 +36,6 @@ chrome_profile/
 
 # Sass
 .sass-cache/
+
+# IDE
+.idea/
